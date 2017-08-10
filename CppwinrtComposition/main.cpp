@@ -32,7 +32,7 @@ struct App : ApplicationT<App>
 			btnVisual.CenterPoint({(float)btn.ActualWidth() / 2,(float)btn.ActualHeight() / 2, 0}); // for rotate
 			auto compositor = btnVisual.Compositor();
 			auto animation = compositor.CreateScalarKeyFrameAnimation();
-			animation.Duration(TimeSpan(std::chrono::seconds(1)));
+			animation.Duration(std::chrono::seconds(1));
 			animation.InsertKeyFrame(0, 0);
 			animation.InsertKeyFrame(1, 360);
 

@@ -43,9 +43,6 @@ struct App : ApplicationT<App>
 		window.Content(uiElement);
 		window.Activate();
 	}
-
-private:
-	TextBlock tb = nullptr;
 };
 
 int __stdcall wWinMain(HINSTANCE, HINSTANCE, PWSTR, int)
